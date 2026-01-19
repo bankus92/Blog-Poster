@@ -3,6 +3,19 @@ const title = document.getElementById("titleInput");
 
 //Blog body input
 const body = document.getElementById("bodyInput");
+//Using Tab to indent instead of switching elements
+body.addEventListener("keydown", function (e) {
+  if (e.key === "Tab") {
+    e.preventDefault();
+    var start = this.selectionStart;
+    var end = this.selectionEnd;
+
+    this.value =
+      this.value.substring(0, start) + "  " + this.value.substring(end);
+
+    this.selectionStart = this.selectionEnd = start + 2;
+  }
+});
 
 //Output
 const titleOut = document.getElementById("titleOutput");
