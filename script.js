@@ -3,7 +3,11 @@ const title = document.getElementById("titleInput");
 
 //Blog body input
 const body = document.getElementById("bodyInput");
-//Using Tab to indent instead of switching elements
+/*
+Using Tab to indent instead of switching elements,
+pulled from Stackoverflow:
+https://stackoverflow.com/questions/6637341/use-tab-to-indent-in-textarea 
+*/
 body.addEventListener("keydown", function (e) {
   if (e.key === "Tab") {
     e.preventDefault();
