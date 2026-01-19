@@ -3,6 +3,7 @@
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="styles.css">
     <title>Writer</title>
   </head>
   <body>
@@ -12,8 +13,10 @@
     </div>
 
     <div id="body">
-      <p>Blog main body goes here</p>
-      <input type="text" id="bodyInput" />
+      <form>
+        <label for="bodyInput">Body input: <br /></label>
+        <textarea id="bodyInput"></textarea>
+      </form>
     </div>
     <div id="btn">
       <button id="generateBtn">Post button</button>
@@ -21,7 +24,7 @@
     
     <div id="outputHtml">
       <h1 id="titleOutput">Title output</h1>
-      <p id="bodyOutput">Body output</p>
+      <p id="bodyOutput" class="formatted-text">Body output</p>
     </div>
 
     <script src="script.js"></script>
