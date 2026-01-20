@@ -23,7 +23,7 @@ I write posts in raw HTML, and this app helps me draft text normally (title + bo
 
 No build tools, no dependencies.
 
-1. Clone the repo
+1. Clone the repo or download the zip
 2. Open the HTML file in your browser (double-click it)
 
 If you want to run it through a local server (optional):
