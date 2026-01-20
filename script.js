@@ -2,13 +2,13 @@
 const title = document.getElementById("titleInput");
 
 //Blog body input
-const body = document.getElementById("bodyInput");
+const blogBody = document.getElementById("bodyInput");
 /*
 Using Tab to indent instead of switching elements,
 pulled from Stackoverflow:
 https://stackoverflow.com/questions/6637341/use-tab-to-indent-in-textarea 
 */
-body.addEventListener("keydown", function (e) {
+blogBody.addEventListener("keydown", function (e) {
   if (e.key === "Tab") {
     e.preventDefault();
     var start = this.selectionStart;
@@ -30,7 +30,7 @@ const btn = document.getElementById("generateBtn");
 btn.addEventListener("click", () => {
   //Gets value of 'Title' & 'Body'
   const titleValue = title.value;
-  const bodyValue = body.value;
+  const bodyValue = blogBody.value;
   //Outputs value of 'Title' & 'Body'
   titleOut.textContent = titleValue;
   bodyOut.textContent = bodyValue;
