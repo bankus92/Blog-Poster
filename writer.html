@@ -7,21 +7,33 @@
     <title>Writer</title>
   </head>
   <body>
-    <div id="title">
-      <p>Blog title input here:</p>
-      <input type="text" id="titleInput" />
-    </div>
-
-    <div id="blogBody">
-      <label for="bodyInput">Body input: <br /></label>
-      <textarea id="bodyInput" rows="10" cols="50"></textarea>
-    </div>
-    <div id="btn">
-      <button type="button" id="generateBtn">Post button</button>
-    </div>
-    <div id="outputHtml">
-      <h1 id="titleOutput">Title output</h1>
-      <p id="bodyOutput" class="formatted-text">Body output</p>
+    <div id="container">
+      <div id="inputContainer">
+        <div id="title">
+          <p>Blog title input here:</p>
+          <input type="text" id="titleInput" />
+        </div>
+        <div id="blogBody">
+          <label for="bodyInput">Body input: <br /></label>
+          <textarea id="bodyInput" rows="10" cols="50"></textarea>
+        </div>
+        <div id="btn">
+          <button type="button" id="generateBtn">Post button</button>
+        </div>
+        <div id="outputText">
+          <h1 id="titleOutput">Title output</h1>
+          <p id="bodyOutput" class="formatted-text">Body output</p>
+        </div>
+      </div>
+      <div id="outputContainer">
+        <div id="outputHtml">
+          <label for="copyHtml">HTML output</label> <br />
+          <textarea id="copyHtml" rows="10" cols="50" readonly></textarea>
+          <div id="htmlButton">
+            <button type="button" id="generateHtmlBtn">Generate HTML</button>
+          </div>
+        </div>
+      </div>
     </div>
 
     <script src="script.js"></script>

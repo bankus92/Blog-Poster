@@ -24,6 +24,8 @@ blogBody.addEventListener("keydown", function (e) {
 //Output
 const titleOut = document.getElementById("titleOutput");
 const bodyOut = document.getElementById("bodyOutput");
+const htmlOut = document.getElementById("copyHtml");
+console.log(htmlOut);
 
 //"Post" button
 const btn = document.getElementById("generateBtn");
@@ -31,7 +33,18 @@ btn.addEventListener("click", () => {
   //Gets value of 'Title' & 'Body'
   const titleValue = title.value;
   const bodyValue = blogBody.value;
-  //Outputs value of 'Title' & 'Body'
+
+  //Outputs value of 'Title' & 'Body' in plain text
   titleOut.textContent = titleValue;
   bodyOut.textContent = bodyValue;
+});
+
+//HTML button
+const htmlBtn = document.getElementById("generateHtmlBtn");
+htmlBtn.addEventListener("click", () => {
+  //Gets value of 'Title & 'Body'
+  const htmlTitleValue = title.value;
+  const htmlBodyValue = blogBody.value;
+
+  //Outputs value of 'Title" & 'Body' to HTML
 });
